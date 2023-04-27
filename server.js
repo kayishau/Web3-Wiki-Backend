@@ -5,7 +5,7 @@ const express = require('express');
 const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
-// const Carbon = require('./models/carbon.js')
+const Topic = require('./models/topic.js')
 const cors =require('cors')
 require('dotenv').config()
 app.use(cors())
