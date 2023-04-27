@@ -54,6 +54,10 @@ app.get('/topic', (req, res)=>{
   })
 });
 
+// app.get('/', (req, res) => {
+//     res.send('Hello world!')
+// })
+
 app.delete('/topic/:id', (req, res)=>{
   Topic.findByIdAndRemove(req.params.id)
   .then((deletedTopic)=> {
